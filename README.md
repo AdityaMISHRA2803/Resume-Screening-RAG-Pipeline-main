@@ -21,14 +21,6 @@ RAG-like frameworks are great tools to enhance the reliability of chatbots. Over
 
 On the other hand, RAG Fusion is effective in addressing complex and ambiguous human-written prompts. While the LLM generator can handle this problem effectively, the retriever may struggle to find relevant documents when presented with multifaceted queries. Therefore, this technique can be used to improve resume retrieval quality when the system receives complex job descriptions (which are quite common in hiring).
 
-> [!NOTE]
-> For more info, please refer to the paper: [Google Drive](https://drive.google.com/drive/folders/19pL-MNfPUVsxePHd8FDvddnoC3S_zNFN?usp=drive_link)
-
-## Demo
-
-The demo interface of the chatbot can be found here: [Streamlit](https://resume-screening-rag-gpt.streamlit.app)
-
-Default synthetic resume data set used in the demo: [GitHub](https://github.com/Hungreeee/Resume-Screening-RAG-Pipeline/blob/main/data/main-data/synthetic-resumes.csv)
 
 Source job description dataset: [Kaggle](https://www.kaggle.com/datasets/kshitizregmi/jobs-and-job-description)
 
@@ -75,21 +67,9 @@ The pipeline begins by processing resumes into a vector storage. Upon receiving 
 To set up the project locally:
 ```
 # Clone the project
-git clone https://github.com/Hungreeee/Resume-Screening-RAG-Pipeline.git
-
+git clone https://github.com/AdityaMISHRA2803/Resume-Screening-RAG-Pipeline-main
 # Install dependencies
 pip install requirements.txt
 ```
 
-To run the Streamlit demo locally:
-```
-streamlit run demo/interface.py
-```
 
-## Contributions
-
-The design of the demo chatbot is relatively simple because it only serves to show the bigger picture of the potential of RAG-like systems in the recruitment domain. As such, the system is still very much a work in progress and any suggestion, feedback, or contribution is highly appreciated! Please share them at [Issue](https://github.com/Hungreeee/Resume-Screening-RAG-Pipeline/issues). 
-
-## Acknowledgement
-
-- Inspired by [RAG Fusion](https://github.com/Raudaschl/rag-fusion) 
